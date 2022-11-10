@@ -1,0 +1,127 @@
+:root{
+    /* primary */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan-hsl:hsl(178, 100%, 50%);
+    /* Neutral */
+    --Very-dark-blue-main: hsl(217, 54%, 11%);
+    --Very-dark-blue-card: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 35%, 37%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Very-dark-blue-main);
+}
+body{
+    height: 100vh;
+}
+
+.card{
+    min-width: 300px;
+    max-width: 350px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--Very-dark-blue-card);
+}
+.container-img{
+    width: 100%;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.image{
+    width: 100%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-text{
+    width: 100%;
+    padding-top: 1.5rem;
+}
+.title_h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--White);
+}
+.text_p{
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    font-weight: 100;
+    line-height: 2.5rem;
+    color: var(--Soft-blue);
+}
+.footer-text{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.text_eth{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--Cyan-hsl);
+    vertical-align: top;
+}
+.text-eth__img{
+    width: 1rem;
+    margin-right: 16px;
+}
+.text-time{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--Soft-blue);
+}
+.time_clock{
+    width: 1.8rem;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+.line-bar{
+    width:100%;
+    height: .3px;
+    background-color: var(--Very-dark-blue-line);
+}
+.info-perfil{
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+}
+.perfil-img{
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--White);
+    border-radius: 50%;
+    vertical-align: bottom;
+}
+.info-autor{
+    font-size: 1.5rem;
+    font-weight: 300;
+    
+    margin-left: 20px;
+    color: var(--Soft-blue);
+}
+.info-autor span{
+    color: var(--White);
+    vertical-align: bottom;
+}
+@media (min-width: 300px) {
+
+    .card{
+        margin-top: 10%;
+    }
+}
+@media (min-width: 1900px) {
+
+    .card{
+        margin-top: 3%;
+    }
+}
